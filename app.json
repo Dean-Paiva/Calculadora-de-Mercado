@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Calculara_de_mercado",
+    "name": "Calculadora de Mercado",
     "slug": "Calculara_de_mercado",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,9 +8,14 @@
     "scheme": "calcularademercado",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "bundleIdentifier": "com.calcularademercado.app",
+      "icon": "./assets/expo.icon",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
+      "package": "com.calcularademercado.app",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -23,20 +28,25 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "backgroundColor": "#208AEF",
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
-        }
-      ]
-    ],
+    // "plugins": [
+    //   "expo-router",
+    //   [
+    //     "expo-splash-screen",
+    //     {
+    //       "backgroundColor": "#071016"
+    //     }
+    //   ]
+    // ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "6d4d622c-9b4a-4f21-bf00-e622591160a5"
+      }
+    },
+    "owner": "dean_paiva"
   }
 }
