@@ -28,15 +28,6 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    // "plugins": [
-    //   "expo-router",
-    //   [
-    //     "expo-splash-screen",
-    //     {
-    //       "backgroundColor": "#071016"
-    //     }
-    //   ]
-    // ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
@@ -47,6 +38,14 @@
         "projectId": "6d4d622c-9b4a-4f21-bf00-e622591160a5"
       }
     },
-    "owner": "dean_paiva"
+    "owner": "dean_paiva",
+    "plugins": [
+      "expo-font",
+      "expo-image",
+      "expo-router",
+      "expo-splash-screen",
+      "expo-status-bar",
+      "expo-web-browser"
+    ]
   }
 }
